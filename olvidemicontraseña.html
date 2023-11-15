@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ea; /* Verde claro */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333; /* Color de texto */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header {
+            background-color: #4caf50; /* Verde principal */
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+        }
+
+        main {
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: #4caf50; /* Verde principal */
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #4caf50; /* Verde principal */
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recuperar Contraseña</h1>
+    </header>
+
+    <main>
+        <p>Ingresa tu dirección de correo electrónico para recuperar tu contraseña.</p>
+        <form action="/procesar_recuperacion" method="post">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Recuperar Contraseña</button>
+        </form>
+        
+        <p>¿Recuerdas tu contraseña? <a href="cc.html">Inicia sesión</a></p>
+    </main>
+</body>
+</html>
